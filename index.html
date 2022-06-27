@@ -27,7 +27,7 @@
                 <span></span>
                 <nav>
                     <ul class="nav-menu" id="menu">
-                        <li id="login"><a href="#"><i class="fa-solid fa-arrow-right-to-bracket"></i>  Iniciar Sesión</a></li>
+                        <li id="login"><a href="/login.html"><i class="fa-solid fa-arrow-right-to-bracket"></i>  Iniciar Sesión</a></li>
                         <li id="login"><a href="#">¿No tenés cuenta? Registrate</a></li>
                         <li><a href="#home">Home</a></li>
                         <li><a href="#ofertas">Shop</a></li>
@@ -53,8 +53,8 @@
                 <h3>BABY'S & KIDS STORE</h3>
             </div>
             <div class="btn_container">
-                <button id="shop"><a href="#ofertas">SHOP</a></button>
-                <button><a href="#">CONTACTO</a></button>
+                <button class="btn-hero1" id="shop"><a href="#ofertas">SHOP</a></button>
+                <button class="btn-hero2"><a href="#contacto">CONTACTO</a></button>
             </div>
         </div>
 
@@ -137,7 +137,10 @@
                     <h4>Toddler</h4>
                     <h2>$500</h2>
                     <h5>$650</h5>
-                    <button>Agregar al carrito</button>
+                    <button>
+                        <i class="fa-solid fa-bag-shopping bag_icon"></i>
+                        <span> Agregar al carrito</span>
+                    </button>
                 </div>
                 <div class="product producto2">
                     <div class="product-image-box">
@@ -147,7 +150,10 @@
                     <h4>Toddler</h4>
                     <h2>$500</h2>
                     <h5>$650</h5>
-                    <button>Agregar al carrito</button>
+                    <button>
+                        <i class="fa-solid fa-bag-shopping bag_icon"></i>
+                        <span> Agregar al carrito</span>
+                    </button>
                 </div>
                 <div class="product producto3">
                     <div class="product-image-box">
@@ -157,7 +163,10 @@
                     <h4>Toddler</h4>
                     <h2>$650</h2>
                     <h5>$850</h5>
-                    <button>Agregar al carrito</button>
+                    <button>
+                        <i class="fa-solid fa-bag-shopping bag_icon"></i>
+                        <span> Agregar al carrito</span>
+                    </button>
                 </div>
             </div>
         </div>
@@ -178,18 +187,26 @@
                     <h2>Envianos un mensaje</h2>
                     <form action="">
                         <div>
-                            <label for=""></label>
+                            <label for="name"></label>
                             <input type="text" name="name" id="name" placeholder="Nombre">
                         </div>
                         <div>
-                            <label for=""></label>
+                            <label for="email"></label>
                             <input type="email" name="email" id="email" placeholder="Email">
                         </div>
                         <div>
+                            <label for="mensaje"></label>
                             <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Mensaje"></textarea>
                         </div>
                         <div>
-                            <button type="submit">Enviar</button>
+                            <button type="submit">
+                                <div>
+                                <i class="fa-solid fa-paper-plane"></i>
+                                </div>
+                                <span>
+                                 Enviar
+                                </span>
+                            </button>
                         </div>
                     </form>
                 </div>
@@ -212,30 +229,26 @@
                     <i class="fa-brands fa-tiktok"></i>
                 </div>
                 <p>Copyright © 2022 - Abrazo de Sol</p>
-                <p>Diseñado por Jorge Castillo</p>
+                <p id="yo"><a href="https://github.com/JorgeCastilloMakers" target="_blank">Diseñado por Jorge Castillo</a></p>
             </div>
         </div>
     </footer>
     <!-- Fin Footer -->
+<script>
+    const icon = document.getElementById('icon');
 
+const menu = document.getElementById('menu');
+icon.onclick = function(){
+    icon.classList.toggle('active');
+    menu.classList.toggle('active');
+}
 
-
-
-    <script>
-        const icon = document.getElementById('icon');
-
-        const menu = document.getElementById('menu');
-        icon.onclick = function(){
-            icon.classList.toggle('active');
-            menu.classList.toggle('active');
-        }
-
-        document.onclick = function(clickEvent){
-            if(clickEvent.target.id !== "menu" && clickEvent.target.id !== "icon"){
-                icon.classList.remove('active');
-                menu.classList.remove('active');
-            }
-        }
-    </script>
+document.onclick = function(clickEvent){
+    if(clickEvent.target.id !== "menu" && clickEvent.target.id !== "icon"){
+        icon.classList.remove('active');
+        menu.classList.remove('active');
+    }
+}
+</script>
 </body>
 </html>
