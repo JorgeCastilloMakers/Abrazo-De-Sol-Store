@@ -560,6 +560,9 @@ html {
     .titles_container > h2:nth-child(3) {
         text-align: center;
     }
+    .maps_container {
+        padding-bottom: 10%;
+    }
     .colecciones__container{
         height: 200vh;
     }
