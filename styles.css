@@ -1182,10 +1182,12 @@ footer > .footer__container > .info__container > #yo > a:hover:before{
     .sign-in{
         align-items: center;
         width: 90%;
-        height: 95%;
+        justify-content: flex-start;
+        
     }
     .loginForm{
         flex-wrap: wrap;
+
     }
     .loginForm> .form__login > div:nth-last-child(1) {
         padding-left: 0;
@@ -1409,7 +1411,6 @@ footer > .footer__container > .info__container > #yo > a:hover:before{
     .register-container{
         align-items: center;
         width: 90%;
-        height: 95%;
     }
     .registerForm{
         flex-wrap: wrap;
