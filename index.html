@@ -27,8 +27,8 @@
                 <span></span>
                 <nav>
                     <ul class="nav-menu" id="menu">
-                        <li id="login"><a href="/login.html"><i class="fa-solid fa-arrow-right-to-bracket"></i>  Iniciar Sesión</a></li>
-                        <li id="login"><a href="#">¿No tenés cuenta? Registrate</a></li>
+                        <li id="login"><a href="#loginForm"><i class="fa-solid fa-arrow-right-to-bracket"></i>  Iniciar Sesión</a></li>
+                        <li id="login"><a href="#registerForm">¿No tenés cuenta? Registrate</a></li>
                         <li><a href="#home">Home</a></li>
                         <li><a href="#ofertas">Shop</a></li>
                         <li><a href="#about">Nosotros</a></li>
@@ -39,8 +39,98 @@
             </div>
             <div class="login__container">
                 <i class="fa-solid fa-bag-shopping bag_icon-mobile"></i>
-                <a href="/login.html"><i class="fa-solid fa-arrow-right-to-bracket"></i>  Iniciar Sesión</a>
-                <a href="#">¿No tenés cuenta? Registrate</a>
+                <a href="#loginForm"><i class="fa-solid fa-arrow-right-to-bracket"></i>  Iniciar Sesión</a>
+                <a href="#registerForm">¿No tenés cuenta? Registrate</a>
+            </div>
+        </div>
+        <div class="loginForm__container" id="loginForm">
+            <div class="sign-in">                    
+                <h2>Iniciar Sesión</h2>
+                <a href="#home"><i class="fa-solid fa-xmark"></i></a>
+                <div class="loginForm">
+                    <form class="form__login" action="">
+                        <div>
+                            <label for="userName">Email o Usuario</label>
+                            <input type="text" name="userName" id="userName" placeholder="Nombre de usuario">
+                        </div>
+                        <div>
+                            <label for="password">Contraseña</label>
+                            <input type="password" name="password" id="password" placeholder="xxxxxxxxx">
+                        </div>
+                        <div>
+                            <a href="">¿Olvidaste tu contraseña?</a>
+                            <a href="">¿No tenes cuenta? Registrate</a>
+                        </div>
+                        <div>
+                            <button type="button">
+                                <div>
+                                <i class="fa-solid fa-paper-plane"></i>
+                                </div>
+                                <span>
+                                Ingresar
+                                </span>
+                            </button>
+                        </div>
+                    </form>
+                    <div class="galeryForm">
+                        <div class="galeriaFondo">
+                        <div class="imagen imagen1"></div>
+                        <div class="imagen imagen2"></div>
+                        <div class="imagen imagen3"></div>
+                        <div class="imagen imagen4"></div>
+                        <div class="imagen imagen5"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="registerForm__container" id="registerForm">
+            <div class="register-container">                    
+                <h2>Registrate</h2>
+                <a href="#home"><i class="fa-solid fa-xmark"></i></a>
+                <div class="registerForm">
+                    <form class="form__register" action="">
+                        <div>
+                            <a href=""><i class="fa-brands fa-google"></i> Registrate con Google</a>
+                            <a href=""><i class="fa-brands fa-facebook-f"></i> Registrate con Facebook</a>
+                        </div>
+                        <div>
+                            <label for="userName">Nombre</label>
+                            <input type="text" name="userName" id="userName" placeholder="Nombre">
+                        </div>
+                        <div>
+                            <label for="userEmail">Email</label>
+                            <input type="email" name="userEmail" id="userEmail" placeholder="Email">
+                        </div>
+                        <div>
+                            <label for="password">Contraseña</label>
+                            <input type="password" name="password" id="password" placeholder="xxxxxxxxx">
+                        </div>
+                        <div>
+                            <label for="password">Repetir Contraseña</label>
+                            <input type="password" name="password" id="password" placeholder="xxxxxxxxx">
+                        </div>
+                        <div>
+                            <button type="button">
+                                <div>
+                                <i class="fa-solid fa-paper-plane"></i>
+                                </div>
+                                <span>
+                                Registrarse
+                                </span>
+                            </button>
+                        </div>
+                    </form>
+                    <div class="galeryForm">
+                        <div class="galeriaFondo">
+                        <div class="imagen imagen1"></div>
+                        <div class="imagen imagen2"></div>
+                        <div class="imagen imagen3"></div>
+                        <div class="imagen imagen4"></div>
+                        <div class="imagen imagen5"></div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </header>
@@ -64,9 +154,9 @@
     <section class="container">
         <div class="about-us__container" id="about">
             <div class="titles_container">
-                <h2>FRASE 1</h2>
-                <h2>FRASE 2</h2>
-                <h2>FRASE 3</h2>
+                <h2>Si tenes miedo</h2>
+                <h2>de emprender,</h2>
+                <h2>emprende con</h2>
             </div>
             <div class="content_container">
                 <div class="content_image">
