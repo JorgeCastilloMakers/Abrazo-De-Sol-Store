@@ -557,6 +557,9 @@ html {
 } 
 
 @media (max-width:780px){
+    .titles_container > h2:nth-child(3) {
+        text-align: center;
+    }
     .colecciones__container{
         height: 200vh;
     }
