@@ -1012,7 +1012,7 @@ footer > .footer__container > .info__container > #yo > a:hover:before{
 /* FIN FOOTER */
 /* loginUser */
 
-.loginForm__container, .registerForm__container{
+.loginForm__container {
     width: 100%;
     height: 100vh;
     background-color: rgba(255, 255, 255, 0.466);
@@ -1029,9 +1029,7 @@ footer > .footer__container > .info__container > #yo > a:hover:before{
 .loginForm__container:target{
     transform: scale(1);
 }
-.registerForm__container:target{
-    transform: scale(1);
-}
+
 .sign-in{
     position: relative;
     top: 5%;
@@ -1047,22 +1045,22 @@ footer > .footer__container > .info__container > #yo > a:hover:before{
     border-radius: 5px;
 }
 
-.sign-in, .register-container > a > i{
+.sign-in > a > i{
     position: absolute;
     top: 2%;
     right: 2%;
     cursor: pointer;
     color: #000;
 }
-.sign-in, .register-container > a > i:hover{
+.sign-in > a > i:hover{
     color: var(--verdeAgua);
 }
 
-.sign-in, .register-container > h2 {
+.sign-in > h2 {
     font-size: clamp(20px, 2.5vw, 35px);
 }
 
-.loginForm, .registerForm{
+.loginForm {
     width: 100%;
     height: 100%;
     background-color: #fafafa;
@@ -1073,7 +1071,7 @@ footer > .footer__container > .info__container > #yo > a:hover:before{
     position: relative;
 }
 
-.loginForm, .registerForm > .form__login, .form__register{
+.loginForm > .form__login {
     width: 100%;
     height: 100%;
     display: flex;
@@ -1082,7 +1080,7 @@ footer > .footer__container > .info__container > #yo > a:hover:before{
     flex-direction: column;
 }
 
-.loginForm, .registerForm > .form__login, .form__register > div{
+.loginForm > .form__login > div{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1090,33 +1088,33 @@ footer > .footer__container > .info__container > #yo > a:hover:before{
     gap: 10px;
 }
 
-.loginForm, .registerForm > .form__login, .form__register > div:nth-last-child(1) {
+.loginForm > .form__login > div:nth-last-child(1) {
     padding-left: 12%;
 
 }
-.loginForm, .registerForm > .form__login, .form__register > div > label{
+.loginForm > .form__login > div > label{
     font-weight: 700;
     font-size: 12px;
 }
-.loginForm, .registerForm > .form__login, .form__register > div > input{
+.loginForm > .form__login > div > input{
     width: 70%;
 }
-.loginForm, .registerForm > .form__login, .form__register > div > input::placeholder{
+.loginForm > .form__login > div > input::placeholder{
     font-size: 12px;
 }
 
-.loginForm, .registerForm > .form__login, .form__register > div > a {
+.loginForm > .form__login > div > a {
     color: var(--verdeAgua);
     font-weight: 500;
     font-size: 15px;
     text-align: center;
 }
 
-.loginForm, .registerForm > .galeryForm{
+.loginForm > .galeryForm{
     width: 100%;
     height: 100%;
 }
-.loginForm, .registerForm > .galeryForm > .galeriaFondo{
+.loginForm > .galeryForm > .galeriaFondo{
     width: 100%;
     height: 100%;
     display: grid;
@@ -1125,12 +1123,12 @@ footer > .footer__container > .info__container > #yo > a:hover:before{
     gap: 10px 10px;
 }
 
-.loginForm, .registerForm > .galeryForm > .galeriaFondo > .imagen {
+.loginForm > .galeryForm > .galeriaFondo > .imagen {
     width: minmax(330px, 450px);
     height: 100%;
     
 }
-.loginForm, .registerForm > .galeryForm > .galeriaFondo > .imagen1{
+.loginForm > .galeryForm > .galeriaFondo > .imagen1{
     background-image: url(assets/fondo1.jpg);
     background-size: cover;
     background-position: center center;
@@ -1140,7 +1138,7 @@ footer > .footer__container > .info__container > #yo > a:hover:before{
     position: relative;
     overflow: hidden;  
 }
-.loginForm, .registerForm > .galeryForm > .galeriaFondo > .imagen2{
+.loginForm > .galeryForm > .galeriaFondo > .imagen2{
     background-image: url(assets/fondo2.jpg);
     background-size: cover;
     background-position: center center;
@@ -1150,7 +1148,7 @@ footer > .footer__container > .info__container > #yo > a:hover:before{
     position: relative;
     overflow: hidden;  
 }
-.loginForm, .registerForm > .galeryForm > .galeriaFondo > .imagen3{
+.loginForm > .galeryForm > .galeriaFondo > .imagen3{
     background-image: url(assets/fondo3.jpg);
     background-size: cover;
     background-position: center center;
@@ -1160,7 +1158,7 @@ footer > .footer__container > .info__container > #yo > a:hover:before{
     position: relative;
     overflow: hidden;  
 }
-.loginForm, .registerForm > .galeryForm > .galeriaFondo > .imagen4{
+.loginForm > .galeryForm > .galeriaFondo > .imagen4{
     background-image: url(assets/fondo4.jpg);
     background-size: cover;
     background-position: center center;
@@ -1170,7 +1168,190 @@ footer > .footer__container > .info__container > #yo > a:hover:before{
     position: relative;
     overflow: hidden;  
 }
-.loginForm, .registerForm > .galeryForm > .galeriaFondo > .imagen5{
+.loginForm > .galeryForm > .galeriaFondo > .imagen5{
+    background-image: url(assets/fondo5.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    grid-column: 9 / 17;
+    grid-row: 11 / 15;
+    position: relative;
+    overflow: hidden;  
+}
+@media (max-width: 780px){
+    .sign-in{
+        align-items: center;
+        width: 90%;
+        height: 95%;
+    }
+    .loginForm{
+        flex-wrap: wrap;
+    }
+    .loginForm> .form__login > div:nth-last-child(1) {
+        padding-left: 0;
+    
+    }
+    .loginForm > .form__login{
+        justify-content: center;
+        align-items: center;
+        z-index: 1;
+        background-color: #fafafad2;
+        flex: 1 1 350px;
+    }
+    .loginForm > .form__login > div {
+        align-items: center;
+    }
+    .loginForm > .galeryForm > .galeriaFondo{
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 0;
+    }
+} 
+/* Fin login */
+
+/* Inicio registro */
+.registerForm__container{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.466);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    position: absolute;
+    top: 120px;
+    left: 0;
+    transform: scale(0);
+    z-index: 20;
+    transition: transform 0.6s ease-in-out;
+}
+
+.registerForm__container:target{
+    transform: scale(1);
+}
+.register-container > a > i{
+    position: absolute;
+    top: 2%;
+    right: 2%;
+    cursor: pointer;
+    color: #000;
+}
+.register-container > a > i:hover{
+    color: var(--verdeAgua);
+}
+
+.register-container > h2 {
+    font-size: clamp(20px, 2.5vw, 35px);
+}
+
+.registerForm{
+    width: 100%;
+    height: 100%;
+    background-color: #fafafa;
+    padding: 2%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.registerForm > .form__register{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.registerForm > .form__register > div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.registerForm > .form__register > div:nth-last-child(1) {
+    padding-left: 12%;
+
+}
+.registerForm > .form__register > div > label{
+    font-weight: 700;
+    font-size: 12px;
+}
+.registerForm > .form__register > div > input{
+    width: 70%;
+}
+.registerForm > .form__register > div > input::placeholder{
+    font-size: 12px;
+}
+.registerForm > .form__register > div > a {
+    color: var(--verdeAgua);
+    font-weight: 500;
+    font-size: 15px;
+    text-align: center;
+}
+
+.registerForm > .galeryForm{
+    width: 100%;
+    height: 100%;
+}
+.registerForm > .galeryForm > .galeriaFondo{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(16, 1fr);
+    grid-template-rows: repeat(14, 1fr);
+    gap: 10px 10px;
+}
+
+.registerForm > .galeryForm > .galeriaFondo > .imagen {
+    width: minmax(330px, 450px);
+    height: 100%;
+    
+}
+.registerForm > .galeryForm > .galeriaFondo > .imagen1{
+    background-image: url(assets/fondo1.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    grid-column: 12 / 17;
+    grid-row: 1 / 6;
+    position: relative;
+    overflow: hidden;  
+}
+.registerForm > .galeryForm > .galeriaFondo > .imagen2{
+    background-image: url(assets/fondo2.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    grid-column: 4 / 12;
+    grid-row: 7 / 11;
+    position: relative;
+    overflow: hidden;  
+}
+.registerForm > .galeryForm > .galeriaFondo > .imagen3{
+    background-image: url(assets/fondo3.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    grid-column: 12 / 17;
+    grid-row: 6 / 11;
+    position: relative;
+    overflow: hidden;  
+}
+.registerForm > .galeryForm > .galeriaFondo > .imagen4{
+    background-image: url(assets/fondo4.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    grid-column: 1 / 9;
+    grid-row: 11 / 15;
+    position: relative;
+    overflow: hidden;  
+}
+.registerForm > .galeryForm > .galeriaFondo > .imagen5{
     background-image: url(assets/fondo5.jpg);
     background-size: cover;
     background-position: center center;
@@ -1225,29 +1406,29 @@ footer > .footer__container > .info__container > #yo > a:hover:before{
     transform: translateX(45px) rotate(45deg) scale(1.1);
 }
 @media (max-width: 780px){
-    .sign-in, .register-container{
+    .register-container{
         align-items: center;
         width: 90%;
         height: 95%;
     }
-    .loginForm, .registerForm{
+    .registerForm{
         flex-wrap: wrap;
     }
-    .loginForm, .registerForm > .form__login, .form__register > div:nth-last-child(1) {
+    .registerForm > .form__register > div:nth-last-child(1) {
         padding-left: 0;
     
     }
-    .loginForm, .registerForm > .form__login, .form__register{
+    .registerForm > .form__register{
         justify-content: center;
         align-items: center;
         z-index: 1;
         background-color: #fafafad2;
         flex: 1 1 350px;
     }
-    .loginForm, .registerForm > .form__login, .form__register > div {
+    .registerForm > .form__register > div {
         align-items: center;
     }
-    .loginForm, .registerForm > .galeryForm > .galeriaFondo{
+    .registerForm > .galeryForm > .galeriaFondo{
         position: absolute;
         left: 0;
         top: 0;
@@ -1257,4 +1438,4 @@ footer > .footer__container > .info__container > #yo > a:hover:before{
         padding-right: 0;
     }
 } 
-/* Fin login/register form */
+/* Fin register form */
