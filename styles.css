@@ -21,6 +21,16 @@ html {
 
 }
 
+body::-webkit-scrollbar{
+    width: 5px;
+
+}
+body::-webkit-scrollbar-thumb{
+    background: #8dd7cf;    
+    border-radius: 4px;
+    border-right: 2px solid #fafafa ;
+}
+
 /* HEADER */
 .header{
     width: 100%;
